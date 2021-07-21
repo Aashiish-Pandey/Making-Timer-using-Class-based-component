@@ -16,12 +16,16 @@ class Timer extends Component {
   componentDidMount() {
     const { startCount } = this.props;
     this.setState({ count: parseInt(startCount) });
+    this.doIntervalChange();
+  }
+
+  doIntervalChange = () => {
     this.myInterval = setInterval(() => {
       this.setState(prevState => ({
         count: prevState.count + 1
       }));
     }, 1000);
-  }
+  };
 
   componentWillUnmount() {
     clearInterval(this.myInterval);
