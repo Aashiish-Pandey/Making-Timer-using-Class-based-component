@@ -1,3 +1,1 @@
-# react-yzdmqm
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-yzdmqm)
+Timer , Created by using React.js Class Based Component and Life cycle methods.
