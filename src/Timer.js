@@ -14,6 +14,8 @@ class Timer extends Component {
   }
 
   componentDidMount() {
+    const { startCount } = this.props;
+    this.setState({ count: parseInt(startCount) });
     this.myInterval = setInterval(() => {
       this.setState(prevState => ({
         count: prevState.count + 1
